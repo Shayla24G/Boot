@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Verify user login",
+        "description": "",
+        "id": "this-is-for-verify-login-activity;verify-user-login",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2961000800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open Ecommorce \"\u003cURL\u003e\" application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u003cURL\u003e",
+                  "offset": 16
+                }
+              ],
+              "location": "UserLogin.open_Ecommorce_application(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 561067100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click account link",
+            "match": {
+              "location": "UserLogin.click_account_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5475587200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter username and Passwaord and click login",
+            "match": {
+              "location": "UserLogin.enter_username_and_Passwaord_and_click_login()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 336536500,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.linkText: Welcome Shayla Binte Alam\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.19.1\u0027, revision: \u0027abe0ee07dc\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.18\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:168)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy23.isDisplayed(Unknown Source)\r\n\tat bootcamp.PageActions.bootcampProfilepageActions.verify_user_login_successfully(bootcampProfilepageActions.java:14)\r\n\tat bootcampStep_def.UserLogin.verify_user_login_successfully(UserLogin.java:34)\r\n\tat ✽.Then verify user login successfully(UserLogin.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "verify user login successfully",
+            "match": {
+              "location": "UserLogin.verify_user_login_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "This is for verify login activity",
+    "description": "",
+    "id": "this-is-for-verify-login-activity",
+    "keyword": "Feature",
+    "uri": "UserLogin.feature"
+  }
+]
